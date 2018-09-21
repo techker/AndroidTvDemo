@@ -71,15 +71,6 @@
                 android:paddingEnd="@dimen/x40"
                 android:paddingStart="@dimen/x40">
 
-                <com.xiaoxuan.demo.tv.widget.view.IjkVideoView
-                    android:id="@+id/video_view"
-                    android:layout_width="@dimen/x620"
-                    android:layout_height="@dimen/x560"
-                    android:layout_gravity="left|center"
-                    android:layout_margin="@dimen/x5"
-                    android:background="@color/black"
-                    android:focusable="false" />
-
                 <com.xiaoxuan.demo.tv.widget.layout.RoundedFrameLayout
                     android:id="@+id/rf_1"
                     android:layout_width="@dimen/x420"
@@ -98,7 +89,7 @@
                         android:background="@drawable/border_down_shape"
                         android:gravity="center"
                         android:padding="15px"
-                        android:text="中国"
+                        android:text="1"
                         android:textColor="@color/gold"
                         android:textSize="15sp" />
 
@@ -123,7 +114,7 @@
                         android:background="@drawable/border_down_shape"
                         android:gravity="center"
                         android:padding="@dimen/x15"
-                        android:text="主权神圣不可侵犯"
+                        android:text="2"
                         android:textColor="@color/gold"
                         android:textSize="15sp" />
 
@@ -148,7 +139,7 @@
                         android:background="@drawable/border_down_shape"
                         android:gravity="center"
                         android:padding="@dimen/x15"
-                        android:text="犯我中华者"
+                        android:text="3"
                         android:textColor="@color/gold"
                         android:textSize="15sp" />
                 </com.xiaoxuan.demo.tv.widget.layout.RoundedFrameLayout>
@@ -172,7 +163,7 @@
                         android:background="@drawable/border_down_shape"
                         android:gravity="center"
                         android:padding="@dimen/x15"
-                        android:text="虽远必诛"
+                        android:text="4"
                         android:textColor="@color/gold"
                         android:textSize="15sp" />
 
@@ -197,7 +188,7 @@
                         android:background="@drawable/border_down_shape"
                         android:gravity="center"
                         android:padding="@dimen/x15"
-                        android:text="爱国从小事做起"
+                        android:text="5"
                         android:textColor="@color/gold"
                         android:textSize="15sp" />
                 </com.xiaoxuan.demo.tv.widget.layout.RoundedFrameLayout>
@@ -223,7 +214,7 @@
                         android:gravity="center"
                         android:lines="1"
                         android:padding="@dimen/x15"
-                        android:text="2017.09.04-xiaoxuan 测试滚动字幕效果"
+                        android:text="6"
                         android:textColor="@color/gold"
                         android:textSize="15sp" />
 

@@ -117,12 +117,12 @@ public class MainActivity extends AppCompatActivity
         mt6 = (MarqueeText)findViewById(R.id.mt_6);
         ScrollTextView scrollingView2 = (ScrollTextView)findViewById(R.id.sv_message);
         scrollingView2.setText(
-            "欢迎加入AndroidTV应用开发者qq群，群号:257251953，我们的前身就是著名的神马tv视频launcher的开发群，我们也是业内首个开源tv launcher源代码的团体，目前群内拥有业内许多优秀的开发者，如果您是做机顶盒（DVB、OTT、TVOS）、电视、交互媒体、以及各种android、android tv 的爱好者均可以加入我们，期待您的加入   ---作者---小轩  2017.09.04 ");
+          "Welcome to Stacboxnation ");
         scrollingView2.setClickable(true);
         scrollingView2.setSpeed(2);
         scrollingView2.setTimes(1314);
-        playVideo(
-            "http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_zxc_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1");
+//        playVideo(
+//            "http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_zxc_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1");
     }
     
     @Override
@@ -193,25 +193,25 @@ public class MainActivity extends AppCompatActivity
         }
     }
     
-    /**
-     * 播放视频
-     *
-     * @param url 直播地址
-     */
-    private void playVideo(String url)
-    {
-        if (url != null)
-        {
-            mVideoView.pause();
-            mVideoView.setVideoPath(url);
-        }
-        else
-        {
-            finish();
-            return;
-        }
-        mVideoView.start();
-    }
+//    /**
+//     * 播放视频
+//     *
+//     * @param url 直播地址
+//     */
+//    private void playVideo(String url)
+//    {
+//        if (url != null)
+//        {
+//            mVideoView.pause();
+//            mVideoView.setVideoPath(url);
+//        }
+//        else
+//        {
+//            finish();
+//            return;
+//        }
+//        mVideoView.start();
+//    }
     
     private BroadcastReceiver mReceiver = new BroadcastReceiver()
     {
@@ -259,23 +259,23 @@ public class MainActivity extends AppCompatActivity
         }
     };
     
-    @Override
-    protected void onStop()
-    {
-        super.onStop();
-        
-        if (!mVideoView.isBackgroundPlayEnabled())
-        {
-            mVideoView.stopPlayback();
-            mVideoView.release(true);
-            mVideoView.stopBackgroundPlay();
-        }
-        else
-        {
-            mVideoView.enterBackground();
-        }
-        IjkMediaPlayer.native_profileEnd();
-    }
+//    @Override
+//    protected void onStop()
+//    {
+//        super.onStop();
+//
+//        if (!mVideoView.isBackgroundPlayEnabled())
+//        {
+//            mVideoView.stopPlayback();
+//            mVideoView.release(true);
+//            mVideoView.stopBackgroundPlay();
+//        }
+//        else
+//        {
+//            mVideoView.enterBackground();
+//        }
+//       // IjkMediaPlayer.native_profileEnd();
+//    }
     
     @Override
     public ITrackInfo[] getTrackInfo()
